@@ -1,0 +1,59 @@
+.card {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 30%;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 1;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.profilecard-container {
+  display: flex;
+  margin-top: 40px;
+}
+.MdAccountCircle-icon {
+  color: rgb(128, 97, 170);
+  font-size: 50px;
+  margin-top: 20px;
+  margin-right: 15px;
+}
+.prfoilecard-body {
+  display: flex;
+}
+.prfoilecard-body p {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.profilecard-svg-text {
+  display: flex;
+  margin-right: 20px;
+}
+.profilecard-svg-text svg {
+  margin-right: 8px;
+}
+.profilecard-svg-text p {
+  color: black;
+}
+.login-btn {
+  background-color: rgb(7, 119, 7);
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.line {
+  margin: 0 15px;
+}

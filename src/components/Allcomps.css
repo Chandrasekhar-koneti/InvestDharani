@@ -1,0 +1,43 @@
+.display-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.display-image,
+.display-video,
+.display-description {
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.display-image img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.display-description {
+  border: 1px solid red;
+  max-width: calc(
+    33.333% - 20px
+  ); /* Set the max-width to one-third minus padding */
+}
+
+@media (max-width: 767px) {
+  .display-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .display-image,
+  .display-video,
+  .display-description {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+  }
+}

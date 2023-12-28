@@ -1,0 +1,90 @@
+.testmonials-nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: bisque;
+  color: rgb(12, 11, 11);
+  padding: 10px;
+}
+.testmonials-title-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testmonials-title-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.testmonials-title-image span {
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+.testmonials-nav-link {
+  text-decoration: none;
+  color: rgb(14, 13, 13);
+  transition: color 0.3s;
+  font-weight: 500;
+}
+
+.testmonials-nav-link:hover {
+  color: #61dafb;
+}
+
+.testmonials-nav-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.testmonials-nav-menu li {
+  padding: 0 1rem;
+  text-decoration: none;
+}
+
+.testmonials-nav-menu li a {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1040px) {
+  .testmonials-nav-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .testmonials-nav-menu li {
+    padding: 1rem;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+
+  .testmonials-nav-menu li a {
+    font-size: 1.5rem;
+    color: rgb(14, 13, 13);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  .testmonials-nav-menu li:hover {
+    background-color: #f5f5f5;
+  }
+
+  .testmonials-nav-menu li:hover a {
+    color: #61dafb;
+  }
+
+  /* Hide images on smaller screens */
+  .testmonials-nav-menu li .testmonials-title-image img {
+    display: none;
+  }
+}
